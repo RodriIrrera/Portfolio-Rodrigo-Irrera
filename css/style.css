@@ -101,6 +101,10 @@ section article .izquierda .iconos {
   padding: 1rem;
 }
 
+section article .izquierda .iconos .fa-cat {
+  padding-left: 0.5rem;
+}
+
 section article .derecha {
   display: -webkit-box;
   display: -ms-flexbox;
