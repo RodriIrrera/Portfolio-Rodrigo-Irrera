@@ -43,7 +43,6 @@ body {
     background-image: url(../img/delivery.jpg);
     width: 30rem;
     height: 350px;
-    margin-right: 1rem;
 }
 
 .envio {
@@ -165,10 +164,16 @@ body {
     .foto, .variedades {
         width: 22rem;
     }
+    .pizzas {
+        font-size: 1rem;
+    }
     .todas {
         font-size: 0.8rem;
     }
     .podio {
         left: 5rem;
+    }
+    .arbol {
+        padding-left: 1rem;
     }
 }
