@@ -43,6 +43,7 @@ body {
     background-image: url(../img/delivery.jpg);
     width: 30rem;
     height: 350px;
+    margin-right: 1rem;
 }
 
 .envio {
@@ -143,7 +144,7 @@ body {
     padding: 0rem 2rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 700px) {
     .centro {
         display: flex;
         flex-direction: column;
@@ -152,5 +153,22 @@ body {
 
     .foto {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .listado {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2rem;
+    }
+    .foto, .variedades {
+        width: 22rem;
+    }
+    .todas {
+        font-size: 0.8rem;
+    }
+    .podio {
+        left: 5rem;
     }
 }

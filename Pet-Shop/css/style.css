@@ -338,6 +338,10 @@ h2 {
         margin-right: 5rem;
     }
 
+    .descuento {
+        color: white;
+    }
+
     h2 {
         width: 80%;
         text-align: center;
