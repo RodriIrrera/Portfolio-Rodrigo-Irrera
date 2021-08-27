@@ -23,6 +23,8 @@ header {
 }
 
 header img {
+  height: 50px;
+  width: auto;
   border-radius: 50%;
 }
 
@@ -101,7 +103,7 @@ section article .izquierda .iconos {
   padding: 1rem;
 }
 
-section article .izquierda .iconos .fa-cat {
+section article .izquierda .iconos .fa-cat, section article .izquierda .iconos .fa-shopping-cart, section article .izquierda .iconos .fa-bicycle {
   padding-left: 1rem;
 }
 
