@@ -55,6 +55,25 @@ h1 {
   padding: 1rem;
 }
 
+.compu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #723067;
+}
+
+.compu .fa-laptop-code {
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+
 section {
   background-color: #723067;
   display: -webkit-box;
@@ -133,8 +152,16 @@ section article .derecha {
 }
 
 section article .derecha a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: white;
+}
+
+.futuro {
+  background-color: #723067;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 footer {
