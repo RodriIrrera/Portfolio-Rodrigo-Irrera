@@ -69,7 +69,7 @@ section {
                 font-size: 2rem;
                 color: white;
                 padding: 0.5rem;
-                .fa-cat, .fa-shopping-cart, .fa-bicycle {
+                .fa-cat, .fa-shopping-cart, .fa-bicycle, .fa-heart {
                     padding-left: 1rem;
                 }
 
@@ -84,7 +84,7 @@ section {
             padding: 0.5rem;
             border: dashed 2px gray;
             a {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: white;
             }
         }
@@ -94,14 +94,33 @@ section {
 footer {
     background-color: #723067;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
     p {
         font-size: 1rem;
         color: white;
-    }
+        }
     a {
         color: white;
         font-size: 2rem;
-    }  
+    }
+    .derechos {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        width: 100%;
+        border-top: white 1px solid;
+    }
+}
+
+
+@media  (min-width: 700px) {
+    .izquierda {
+        width: 27rem;
+        margin-right: 1rem;
+    }
+    .derecha {
+        width: 27rem;
+    }
 }

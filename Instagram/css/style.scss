@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80px;
+    column-gap: 0.2rem;
+    p {
+        font-size: 1.5rem;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-self: center;}
+    .foto {
+        border-radius: 50%;
+        grid-column: 5 / 6;
+        align-self: center;
+        justify-self: center;}
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px;
+    column-gap: 0.2rem;
+    align-items: center;
+    justify-items:  center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    div {
+        grid-column: 2 / 5;
+        grid-template-rows: 80px;
+        border: 1px solid grey;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        .cajas {
+            padding: 0.1rem;
+            border-radius: 50%;
+        }
+    }
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". uno uno uno ."
+    ". dos dos dos .";
+    column-gap: 0.2rem;
+    .parte-uno {
+        margin-top: 1rem;
+        border: 1px solid grey;
+        grid-area: uno;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        column-gap: 0.2rem;
+        .cara {
+            border-radius: 50%;
+            grid-column: 1 / 2;
+            padding: 0.3rem;
+        }
+        .abril {
+            grid-column: 2 / 4;
+        }
+        .icono {
+            grid-column: 4 /5;
+        }
+    }
+    .parte-dos {
+        border: 1px solid grey;
+        grid-area: dos;
+        margin-bottom: 1rem;
+        .grande {
+            width: 90%;
+            margin-top: 1rem;
+            margin-left: 0.6rem;
+            margin-bottom: 0.3rem;
+        }
+        .iconos {
+            margin-left: 0.6rem;
+            width: 10%;
+            margin-bottom: 0.3rem;
+        }
+        .uno {
+            margin-left: 0.7rem;
+            font-size: 0.7rem;
+            margin-bottom: 0.3rem;
+        }
+        .dos {
+            margin-left: 0.6rem;
+            color:#A49B9B;
+            font-size: 0.7rem;
+            margin-bottom: 0.3rem;
+        }
+        .tres {
+            margin-left: 0.6rem;
+            margin-bottom: 0.3rem;
+            font-size: 0.7rem;
+        }
+        .cuatro {
+            font-size: 0.7rem;
+            margin-left: 0.6rem;
+            margin-bottom: 0.3rem;
+        }
+        .retoque {
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 35px;
+    background-color: black;
+    .pie {
+        font-weight: lighter;
+        font-size: 0.5rem;
+        grid-column: 2 / 5;
+        align-self: center;
+        justify-self: center;
+        color: white;
+    }
+}

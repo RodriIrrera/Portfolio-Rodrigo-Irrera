@@ -1,0 +1,206 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 80px;
+      grid-template-rows: 80px;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+header .foto {
+  border-radius: 50%;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 80px;
+      grid-template-rows: 80px;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-rows: 80px;
+      grid-template-rows: 80px;
+  border: 1px solid grey;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav div .cajas {
+  padding: 0.1rem;
+  border-radius: 50%;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". uno uno uno ." ". dos dos dos .";
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+
+section .parte-uno {
+  margin-top: 1rem;
+  border: 1px solid grey;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: uno;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+
+section .parte-uno .cara {
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  padding: 0.3rem;
+}
+
+section .parte-uno .abril {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+section .parte-uno .icono {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 /5;
+}
+
+section .parte-dos {
+  border: 1px solid grey;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: dos;
+  margin-bottom: 1rem;
+}
+
+section .parte-dos .grande {
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+section .parte-dos .iconos {
+  margin-left: 0.6rem;
+  width: 10%;
+  margin-bottom: 0.3rem;
+}
+
+section .parte-dos .uno {
+  margin-left: 0.7rem;
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+section .parte-dos .dos {
+  margin-left: 0.6rem;
+  color: #A49B9B;
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+section .parte-dos .tres {
+  margin-left: 0.6rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.7rem;
+}
+
+section .parte-dos .cuatro {
+  font-size: 0.7rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+section .parte-dos .retoque {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 35px;
+      grid-template-rows: 35px;
+  background-color: black;
+}
+
+footer .pie {
+  font-weight: lighter;
+  font-size: 0.5rem;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
