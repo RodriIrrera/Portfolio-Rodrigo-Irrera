@@ -113,7 +113,7 @@ section article .izquierda {
           align-items: center;
   font-size: 1.2rem;
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
   border: dashed 2px white;
 }
 
@@ -142,23 +142,21 @@ section article .derecha {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.2rem;
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
   border: dashed 2px white;
 }
 
 section article .derecha a {
-  font-size: 1.7rem;
-  color: white;
-}
-
-section article .derecha a .fa-eye:hover {
-  color: orange;
   font-size: 2rem;
+  color: orange;
 }
 
 .futuro {
@@ -189,11 +187,6 @@ footer p {
 }
 
 footer a {
-  color: white;
-  font-size: 2rem;
-}
-
-footer a .fa-linkedin:hover {
   color: orange;
   font-size: 2.2rem;
 }
@@ -208,12 +201,20 @@ footer .derechos {
 }
 
 @media (min-width: 700px) {
-  .izquierda {
+  section .izquierda {
     width: 27rem;
     margin-right: 1rem;
   }
-  .derecha {
+  section .derecha {
     width: 27rem;
+  }
+  section .derecha .fa-eye:hover {
+    color: orange;
+    font-size: 2.7rem;
+  }
+  footer .fa-linkedin:hover {
+    color: orange;
+    font-size: 2.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

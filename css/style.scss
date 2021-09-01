@@ -73,7 +73,7 @@ section {
             align-items: center;
             font-size: 1.2rem;
             color: white;
-            padding: 0.5rem;
+            padding: 0.5rem 0.5rem 1rem 0.5rem;
             border: dashed 2px white;
             .iconos {
                 display: flex;
@@ -90,18 +90,15 @@ section {
         .derecha {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             font-size: 1.2rem;
             color: white;
-            padding: 0.5rem;
+            padding: 0.5rem 0.5rem 0.3rem 0.5rem;
             border: dashed 2px white;
             a {
-                font-size: 1.7rem;
-                color: white;
-                .fa-eye:hover {
-                    color: orange;
-                    font-size: 2rem;
-                }
+                font-size: 2rem;
+                color: orange;
             }
         }
     }
@@ -126,12 +123,8 @@ footer {
         color: white;
     }
     a {
-        color: white;
-        font-size: 2rem;
-        .fa-linkedin:hover {
-            color: orange;
-            font-size: 2.2rem;
-        }
+        color: orange;
+        font-size: 2.2rem;
     }
     .derechos {
         text-align: center;
@@ -143,13 +136,25 @@ footer {
     }
 }
 
-
-@media  (min-width: 700px) {
-    .izquierda {
-        width: 27rem;
-        margin-right: 1rem;
+@media (min-width: 700px) {
+    section {
+        .izquierda {
+            width: 27rem;
+            margin-right: 1rem;
+        }
+        .derecha {
+            width: 27rem;
+            .fa-eye:hover {
+                color: orange;
+                font-size: 2.7rem;
+            }
+        }
     }
-    .derecha {
-        width: 27rem;
+    
+    footer {
+        .fa-linkedin:hover {
+            color: orange;
+            font-size: 2.7rem;
+        }
     }
 }
